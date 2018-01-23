@@ -1,0 +1,441 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/*Mobile first*/
+/*Default indstillinger*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 90px; /* Add a top margin/padding to avoid content overlay */
+  margin: 0 5% 4% 5%;
+}
+
+h2{
+  font-family: 'Helvetica Neue', 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 280%;
+}
+
+h3{
+  font-family: 'Helvetica Neue', 'Raleway', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0.3em;
+}
+
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
+  font-size: 19px;
+  margin: 1em 0;
+}
+
+a{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+/*Default indstillinger slutter*/
+
+
+
+/*Burgermenu start*/
+header {
+  padding: 0 5%;
+  border-bottom: solid 1px #eeeeee;
+  background-color: white;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header img {
+  margin-left: 6%;
+  float: left;
+  width: 170px;
+}
+
+header div label {
+  text-align: center;
+  color: black;
+  font-size: 170%;
+  float: right;
+  margin: 0.8em 0;
+}
+
+header div input {
+  display: none;
+}
+
+header div input:checked + nav {
+  left: 0px;
+}
+/*Burgermenu slutter*/
+
+
+
+/*Styling af forside starter*/
+#index{
+  padding-top: 0;
+}
+
+#index img{
+margin-top: 0;
+width: 100%;
+}
+
+/*#index header{
+  margin-bottom: 100px;
+}*/
+
+
+#index video{
+  margin-top: 100px;
+}
+
+#index section h1 {
+    font-style: italic;
+    /*font-family: 'Helvetica Neue', 'Raleway', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 140%;
+    text-align: center;
+    margin-top: 5%;
+    padding: 2% 8%;
+    width: 100%;
+    color: #2b2b2b;
+    /*background-color: #FAE100;*/
+    /*background-color: #FFE4B0;*/
+    background-color: #FFF4E0;
+}
+
+#index .flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#index .flex-item{
+  max-width: 270px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 135%;
+  margin-top: 5%;
+}
+/*Styling af forside slutter*/
+
+
+
+/*Styling af "om"siden starter*/
+#about .flex-item img {
+  max-width: 100%;
+  margin-bottom: 2em;
+}
+
+#about .flex-container {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    opacity: 0.95;
+    flex-wrap: wrap-reverse;
+    margin-top: 1em;
+}
+
+#about .flex-item {
+  width: 400px;
+}
+
+#about h3{
+  font-size: 180%;
+}
+
+#about p{
+  margin-top: 0;
+}
+/*Styling af "om"siden slutter*/
+
+
+
+/*Styling af kontaktside starter*/
+#contact .flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#contact .flex-item p{
+  margin: 0;
+}
+
+#contact .flex-item{
+  width: 450px;
+  margin: 0.7em 0;
+}
+/*Styling af kontaktside slutter*/
+
+
+
+/*Styling af ateliersiden starter*/
+#atelier .flex-container{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+#atelier p{
+  margin-top:0;
+}
+
+#atelier .flex-item img{
+  max-width: 100%
+}
+
+#atelier .flex-item{
+  width: 270px;
+}
+/*Styling af ateliersiden slutter*/
+
+
+/*Styling af eventsiden starter*/
+#story img{
+  max-width: 214px;
+  max-height: 320px;
+}
+
+#story .flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#story .flex-item{
+  padding: 6% 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+#story .flex-item figure figcaption{
+  font-size: 110%;
+  font-weight: bold;
+  color: black;
+}
+
+#story .flex-item figure::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  /*background: #FAE100;*/
+  background-color: #FFE4B0;
+  transition: width .3s;
+}
+
+#story .flex-item figure:hover::after{
+  width: 100%;
+}
+/*Styling af eventsiden slutter*/
+
+
+
+/*Styling af arlasiden starter*/
+#arla article a{
+  display: block;
+  font-weight: bolder;
+}
+
+#arla aside img{
+  margin-top: 1em;
+}
+
+#arla h3{
+  text-align: center;
+}
+/*Styling af arlasiden slutter*/
+
+/*Styling af footer starter*/
+footer{
+  padding: 2%;
+  border-top: solid 1px #eeeeee;
+  background-color: white;
+}
+
+footer p{
+  font-size: 100%;
+  text-align: center;
+  margin: 0.3em;
+}
+
+footer div{
+  text-align: center;
+}
+
+footer div a {
+  text-align: center;
+}
+footer div a i.fa {
+  line-height: 30px;
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0 0.1em;
+}
+/*Styling af footer slutter*/
+
+
+
+/*Styling af header ved mobil*/
+@media screen and (max-width: 900px) {
+  header div nav {
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: #b2b2b2;
+    -webkit-box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.25);
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    z-index: 1000;
+    text-align: center;
+    padding: 30% 0;
+  }
+  header div nav a {
+    display: block;
+    height: 30px;
+    color: #fff6f4;
+    font-size: 140%;
+    line-height: 50px;
+    margin: 1.5em 0;
+  }
+  header img{
+    margin-left: -5%;
+  }
+}
+/*Styling af header ved mobil slutter*/
+
+
+
+/*Styling ved computerskærm*/
+@media screen and (min-width:901px) {
+  main {
+    padding-top: 150px;
+    margin: 0 10% 4% 10%;
+  }
+
+  h2{
+    font-size: 50px;
+  }
+
+  header img{
+    width: 20%;
+  }
+
+  header div label, header div input{
+    display: none;
+  }
+
+
+  nav{
+    float: right;
+    margin-top: 4%;
+    /*margin-right: 5%;*/
+    margin-right: 5.5%;
+  }
+
+  nav a {
+    font-size: 16px;
+      display: block;
+      float: left;
+      /*padding: 0.5em 2em;*/
+      padding: 0.5em 0 0.5em 3.5em;
+  }
+
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    /*background: #FAE100;*/
+    background-color: #FFE4B0;
+    transition: width .3s;
+  }
+
+  nav a:hover::after{
+    width: 100%;
+  }
+
+  #index section h1{
+    font-size: 170%;
+  }
+
+  #index .flex-container{
+    justify-content: space-between;
+  }
+
+  #index .flex-items{
+    font-size: 150%;
+    width: 500px;
+  }
+
+  #story .flex-container{
+    justify-content: space-between;
+  }
+
+  #story .flex-item{
+    padding: 2% 0;
+  }
+
+  #story article{
+    margin-top: 2em;
+  }
+
+  #arla{
+    height: 590px;
+  }
+
+  #arla article{
+    width: 50%;
+    float: left;
+    margin-top: 1em;
+  }
+
+  #arla aside{
+    width: 50%;
+    float: right;
+    margin-top: 1em;
+  }
+
+  #arla article a:hover{
+    text-decoration: underline;
+  }
+
+  #about .flex-container{
+    justify-content: space-between;
+    margin-top: 3em;
+  }
+
+  #about .flex-item{
+    width: 48%;
+  }
+
+  #atelier .flex-container{
+    justify-content: space-between;
+    margin-top: 3em;
+  }
+
+  #atelier .flex-item{
+    width: 46%;
+  }
+
+  #contact .flex-container{
+    margin-top: 2em;
+  }
+}
+/*Styling ved computerskærm*/
